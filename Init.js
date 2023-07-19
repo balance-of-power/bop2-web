@@ -40,17 +40,17 @@ function setStance(Who, j, GovMAid, InsMAid, GovIntv, InsIntv, Treat, ForAid, Tr
 	Trade[Who][j] = Tr;
   }
   
-  // Example usage:
-  // var Who = 2;    // Replace 2 with the appropriate value for Who
-  // var j = 3;      // Replace 3 with the appropriate value for j
-  // var GovMAid = 100;
-  // var InsMAid = 50;
-  // var GovIntv = 75;
-  // var InsIntv = 25;
-  // var Treat = 1;
-  // var ForAid = 200;
-  // var Tr = 50;
-  // setStance(Who, j, GovMAid, InsMAid, GovIntv, InsIntv, Treat, ForAid, Tr);
+// Example usage:
+// var Who = 2;    // Replace 2 with the appropriate value for Who
+// var j = 3;      // Replace 3 with the appropriate value for j
+// var GovMAid = 100;
+// var InsMAid = 50;
+// var GovIntv = 75;
+// var InsIntv = 25;
+// var Treat = 1;
+// var ForAid = 200;
+// var Tr = 50;
+// setStance(Who, j, GovMAid, InsMAid, GovIntv, InsIntv, Treat, ForAid, Tr);
   
 // PROCEDURE InitCont(i,j: Integer); 
 function initCont(i, j) { 
@@ -71,9 +71,9 @@ function finiCntry(Cntry) {
 	ctx.stroke();
   }
   
-  // Example usage:
-  // var Cntry = 0; // Replace 0 with the appropriate country index
-  // finiCntry(Cntry);
+// Example usage:
+// var Cntry = 0; // Replace 0 with the appropriate country index
+// finiCntry(Cntry);
 
 // PROCEDURE InitCountry(Cntry: integer; PasdName: str255; GP,Pop,MilS,GWing,IWing,GStrg,IStrg,GGrowth,PGrowth,GStab,InvtF,GPop,MilM,DMess,Deaths: Integer); {begins initialization of a country}
 function initCountry(
@@ -135,9 +135,9 @@ function initCountry(
 	OpenRgn();
   }
   
-  // Example usage:
-  // initCountry(Cntry, PasdName, GP, Pop, MilS, GWing, IWing, GStrg, IStrg, GGrowth,
-  //             PGrowth, GStab, InvtF, GPop, MilM, DMess, Deaths);
+// Example usage:
+// initCountry(Cntry, PasdName, GP, Pop, MilS, GWing, IWing, GStrg, IStrg, GGrowth,
+//             PGrowth, GStab, InvtF, GPop, MilM, DMess, Deaths);
 
 // PROCEDURE SetHDipAff(index,i1,i2,i3,i4,i5,i6,i7,i8,i9,i10: integer); {sets diplomatic affinity values for initialization}
 function setHDipAff(index, i1, i2, i3, i4, i5, i6, i7, i8, i9, i10) {
@@ -153,9 +153,9 @@ function setHDipAff(index, i1, i2, i3, i4, i5, i6, i7, i8, i9, i10) {
 	DipAff[1][index + 10] = i10;
   }
   
-  // Example usage:
-  // var index = 5; // Replace 5 with the appropriate index value
-  // setHDipAff(index, i1, i2, i3, i4, i5, i6, i7, i8, i9, i10);
+// Example usage:
+// var index = 5; // Replace 5 with the appropriate index value
+// setHDipAff(index, i1, i2, i3, i4, i5, i6, i7, i8, i9, i10);
   
 // PROCEDURE SetCDipAff(index,i1,i2,i3,i4,i5,i6,i7,i8,i9,i10: integer); {sets diplomatic affinity values for initialization}
 function setCDipAff(index, i1, i2, i3, i4, i5, i6, i7, i8, i9, i10) {
@@ -171,9 +171,9 @@ function setCDipAff(index, i1, i2, i3, i4, i5, i6, i7, i8, i9, i10) {
 	DipAff[2][index + 10] = i10;
   }
   
-  // Example usage:
-  // var index = 5; // Replace 5 with the appropriate index value
-  // setCDipAff(index, i1, i2, i3, i4, i5, i6, i7, i8, i9, i10);
+// Example usage:
+// var index = 5; // Replace 5 with the appropriate index value
+// setCDipAff(index, i1, i2, i3, i4, i5, i6, i7, i8, i9, i10);
   
 // PROCEDURE TouchDown(ix,iy: integer; VAR FirstPt: Point);	 {used in graphics initialization}
 function touchDown(ix, iy, FirstPt) {
@@ -182,11 +182,11 @@ function touchDown(ix, iy, FirstPt) {
 	ctx.moveTo(FirstPt.h, FirstPt.v);
   }
   
-  // Example usage:
-  // var ix = 100; // Replace with the appropriate x-coordinate
-  // var iy = 50;  // Replace with the appropriate y-coordinate
-  // var FirstPt = { h: 0, v: 0 }; // Replace with the appropriate initial Point object
-  // touchDown(ix, iy, FirstPt);
+// Example usage:
+// var ix = 100; // Replace with the appropriate x-coordinate
+// var iy = 50;  // Replace with the appropriate y-coordinate
+// var FirstPt = { h: 0, v: 0 }; // Replace with the appropriate initial Point object
+// touchDown(ix, iy, FirstPt);
 
 // PROCEDURE CircTst(FirstPt: Point); {tests whether a region has been closed properly}
 function CircTst(FirstPt) {
@@ -210,9 +210,9 @@ function CircTst(FirstPt) {
 	}
   }
   
-  // Example usage:
-  // var FirstPt = { h: 100, v: 50 }; // Replace with the appropriate initial Point object
-  // CircTst(FirstPt);  
+// Example usage:
+// var FirstPt = { h: 100, v: 50 }; // Replace with the appropriate initial Point object
+// CircTst(FirstPt);  
 
 // PROCEDURE Compass (DirnStrng:Str255);	 {Moves pen around country border}
 function compass(DirnStrng) {
@@ -254,9 +254,9 @@ function compass(DirnStrng) {
 	ctx.stroke();
   }
   
-  // Example usage:
-  // var DirnStrng = "2NE1W2S"; // Replace with the appropriate direction string
-  // compass(DirnStrng);
+// Example usage:
+// var DirnStrng = "2NE1W2S"; // Replace with the appropriate direction string
+// compass(DirnStrng);
   
 // FUNCTION RandomAdjust(Value,ULimit,LLimit,Divisor: Integer): Integer;
 function randomAdjust(Value, ULimit, LLimit, Divisor) {
@@ -266,15 +266,14 @@ function randomAdjust(Value, ULimit, LLimit, Divisor) {
 	return x;
   }
   
-  // Example usage:
-  // var Value = 50; // Replace with the appropriate input value
-  // var ULimit = 100; // Replace with the upper limit
-  // var LLimit = 0; // Replace with the lower limit
-  // var Divisor = 2; // Replace with the divisor value
-  // var result = randomAdjust(Value, ULimit, LLimit, Divisor);
-  // console.log(result);
+// Example usage:
+// var Value = 50; // Replace with the appropriate input value
+// var ULimit = 100; // Replace with the upper limit
+// var LLimit = 0; // Replace with the lower limit
+// var Divisor = 2; // Replace with the divisor value
+// var result = randomAdjust(Value, ULimit, LLimit, Divisor);
+// console.log(result);
   
-
 // {$S NAmerica}
 
 function setCDipAff(index, i1, i2, i3, i4, i5, i6, i7, i8, i9, i10) {
@@ -442,8 +441,8 @@ function setCDipAff(index, i1, i2, i3, i4, i5, i6, i7, i8, i9, i10) {
 	finiCntry(1);
   }
   
-  // Example usage:
-  USAmerica();
+// Example usage:
+USAmerica();
   
 // PROCEDURE NorthAmerica;
 function NorthAmerica() {
@@ -609,8 +608,8 @@ circTst(FirstPt);
 finiCntry(7);
 }
   
-  // Example usage:
-  NorthAmerica();  
+// Example usage:
+NorthAmerica();  
 
 {$S SAmerica}
 {**********************************************************************}
